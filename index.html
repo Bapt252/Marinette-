@@ -9,32 +9,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <svg class="marinette-logo" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
+    <!-- Navigation Full Width -->
+    <nav class="navbar-fullwidth">
+        <div class="nav-content">
+            <div class="nav-logo-section">
+                <svg class="marinette-logo-main" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
                     <defs>
                         <style>
-                            .logo-text { fill: #0066FF; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 18px; }
-                            .logo-tagline { fill: #666; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 8px; text-transform: uppercase; letter-spacing: 0.1em; }
+                            .logo-text-main { fill: #0066FF; font-family: 'Inter', sans-serif; font-weight: 800; font-size: 20px; }
+                            .logo-tagline-main { fill: #666; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 8px; text-transform: uppercase; letter-spacing: 0.15em; }
                         </style>
                     </defs>
-                    
-                    <!-- Marinette Text -->
-                    <text x="0" y="22" class="logo-text">Marinette</text>
-                    
-                    <!-- Performance Agency -->
-                    <text x="0" y="35" class="logo-tagline">PERFORMANCE AGENCY</text>
+                    <text x="0" y="25" class="logo-text-main">Marinette</text>
+                    <text x="0" y="38" class="logo-tagline-main">PERFORMANCE AGENCY</text>
                 </svg>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#services">Services</a></li>
-                <li><a href="#methode">Méthode</a></li>
-                <li><a href="#resultats">Résultats</a></li>
-                <li><a href="#contact" class="cta-nav">Démarrer maintenant</a></li>
+            <ul class="nav-menu-dynamic">
+                <li><a href="#services" class="nav-link-animated">Services</a></li>
+                <li><a href="#methode" class="nav-link-animated">Méthode</a></li>
+                <li><a href="#resultats" class="nav-link-animated">Résultats</a></li>
+                <li><a href="#contact" class="cta-nav-pulse">Démarrer maintenant</a></li>
             </ul>
-            <div class="hamburger">
+            <div class="hamburger-modern">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -42,242 +38,392 @@
         </div>
     </nav>
 
-    <!-- Hero Section Amélioré -->
-    <section class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span>✨ 6+ années d'expertise</span>
+    <!-- Hero Section Full Width Animated -->
+    <section class="hero-fullwidth">
+        <div class="hero-background-animated"></div>
+        <div class="hero-content-fullwidth">
+            <div class="hero-left-content">
+                <div class="hero-badge-animated" data-aos="fade-up" data-aos-delay="100">
+                    <span class="sparkle">✨</span>
+                    <span>6+ années d'expertise</span>
                 </div>
                 
-                <h1>L'influence marketing<br><span class="highlight">sans les maux de tête</span></h1>
+                <h1 class="hero-title-dynamic" data-aos="fade-up" data-aos-delay="200">
+                    L'influence marketing<br>
+                    <span class="highlight-animated">sans les maux de tête</span>
+                </h1>
                 
-                <p class="hero-description">Transformez vos budgets influence en revenus mesurables. Marinette vous accompagne pour générer un ROI concret grâce à des campagnes d'influence pilotées à la data.</p>
+                <p class="hero-description-animated" data-aos="fade-up" data-aos-delay="300">
+                    Transformez vos budgets influence en revenus mesurables. Marinette vous accompagne pour générer un ROI concret grâce à des campagnes d'influence pilotées à la data.
+                </p>
                 
-                <div class="hero-stats-inline">
-                    <div class="stat-inline">
-                        <strong>+285%</strong>
-                        <span>ROI moyen</span>
+                <div class="hero-stats-fullwidth" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-card-animated">
+                        <div class="stat-number-dynamic">+285%</div>
+                        <div class="stat-label-dynamic">ROI moyen</div>
+                        <div class="stat-progress"></div>
                     </div>
-                    <div class="stat-inline">
-                        <strong>€2.8M</strong>
-                        <span>CA généré</span>
+                    <div class="stat-card-animated">
+                        <div class="stat-number-dynamic">€2.8M</div>
+                        <div class="stat-label-dynamic">CA généré</div>
+                        <div class="stat-progress"></div>
                     </div>
-                    <div class="stat-inline">
-                        <strong>100%</strong>
-                        <span>campagnes mesurées</span>
+                    <div class="stat-card-animated">
+                        <div class="stat-number-dynamic">100%</div>
+                        <div class="stat-label-dynamic">campagnes mesurées</div>
+                        <div class="stat-progress"></div>
                     </div>
                 </div>
                 
-                <div class="hero-cta">
-                    <a href="#contact" class="btn-primary-large">Auditer mes performances</a>
-                    <a href="#services" class="btn-secondary-outline">Voir comment ça marche</a>
+                <div class="hero-cta-animated" data-aos="fade-up" data-aos-delay="500">
+                    <a href="#contact" class="btn-primary-dynamic">
+                        <span>Auditer mes performances</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#services" class="btn-secondary-dynamic">
+                        <span>Voir comment ça marche</span>
+                        <i class="fas fa-play"></i>
+                    </a>
                 </div>
                 
-                <div class="social-proof">
-                    <p>Ils nous font confiance :</p>
-                    <div class="brands-inline">
-                        <span>Filorga</span>
-                        <span>Nespresso</span>
-                        <span>Lacoste</span>
-                        <span>Schneider Electric</span>
-                        <span>+12 autres</span>
+                <div class="social-proof-animated" data-aos="fade-up" data-aos-delay="600">
+                    <p class="trust-label">Ils nous font confiance :</p>
+                    <div class="brands-carousel">
+                        <div class="brand-item">Filorga</div>
+                        <div class="brand-item">Nespresso</div>
+                        <div class="brand-item">Lacoste</div>
+                        <div class="brand-item">Schneider Electric</div>
+                        <div class="brand-item">Typology</div>
+                        <div class="brand-item">Monoprix</div>
                     </div>
                 </div>
             </div>
             
-            <div class="hero-visual">
-                <div class="dashboard-preview">
-                    <div class="dashboard-header">
-                        <div class="dashboard-tabs">
-                            <span class="tab active">Performance</span>
-                            <span class="tab">Influence</span>
-                            <span class="tab">ROI</span>
+            <div class="hero-right-visual" data-aos="fade-left" data-aos-delay="400">
+                <div class="dashboard-3d">
+                    <div class="dashboard-floating-card">
+                        <div class="card-header-animated">
+                            <div class="performance-indicator pulsing"></div>
+                            <span class="live-text">Performance Live</span>
                         </div>
-                    </div>
-                    <div class="dashboard-content">
-                        <div class="metric-card">
-                            <div class="metric-header">
-                                <span class="metric-title">ROAS</span>
-                                <span class="metric-trend">↗ +47%</span>
+                        <div class="metrics-grid-animated">
+                            <div class="metric-item-dynamic">
+                                <div class="metric-icon">📈</div>
+                                <div class="metric-details">
+                                    <div class="metric-value-animated">4.2x</div>
+                                    <div class="metric-label">ROAS</div>
+                                    <div class="metric-trend positive">+47%</div>
+                                </div>
                             </div>
-                            <div class="metric-value">4.2x</div>
-                            <div class="metric-chart">
-                                <div class="chart-line"></div>
-                            </div>
-                        </div>
-                        <div class="metric-card">
-                            <div class="metric-header">
-                                <span class="metric-title">Conversions</span>
-                                <span class="metric-trend">↗ +23%</span>
-                            </div>
-                            <div class="metric-value">1,847</div>
-                            <div class="metric-chart">
-                                <div class="chart-bars">
-                                    <div class="bar" style="height: 60%"></div>
-                                    <div class="bar" style="height: 80%"></div>
-                                    <div class="bar" style="height: 45%"></div>
-                                    <div class="bar" style="height: 90%"></div>
+                            <div class="metric-item-dynamic">
+                                <div class="metric-icon">🎯</div>
+                                <div class="metric-details">
+                                    <div class="metric-value-animated">1,847</div>
+                                    <div class="metric-label">Conversions</div>
+                                    <div class="metric-trend positive">+23%</div>
                                 </div>
                             </div>
                         </div>
+                        <div class="chart-animated">
+                            <div class="chart-bar-dynamic" data-height="60"></div>
+                            <div class="chart-bar-dynamic" data-height="85"></div>
+                            <div class="chart-bar-dynamic" data-height="40"></div>
+                            <div class="chart-bar-dynamic" data-height="95"></div>
+                            <div class="chart-bar-dynamic" data-height="70"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        
+        <!-- Floating Elements -->
+        <div class="floating-elements">
+            <div class="floating-icon" data-speed="2">💎</div>
+            <div class="floating-icon" data-speed="3">🚀</div>
+            <div class="floating-icon" data-speed="1.5">📊</div>
+        </div>
     </section>
 
-    <!-- Problem/Solution Section Repensée -->
-    <section class="value-prop">
-        <div class="container">
-            <div class="section-header-center">
-                <h2>Pourquoi 70% des budgets influence ne génèrent aucun ROI mesurable ?</h2>
+    <!-- Problem Section Full Width -->
+    <section class="problems-fullwidth">
+        <div class="section-background-pattern"></div>
+        <div class="problems-content">
+            <div class="section-header-dynamic" data-aos="fade-up">
+                <h2 class="section-title-animated">
+                    Pourquoi <span class="highlight-number">70%</span> des budgets influence 
+                    <span class="underline-animated">ne génèrent aucun ROI</span> mesurable ?
+                </h2>
             </div>
             
-            <div class="problems-grid">
-                <div class="problem-card">
-                    <div class="problem-icon">❌</div>
-                    <h3>Influence = Vanity Metrics</h3>
-                    <p>Vos campagnes génèrent des likes mais pas de ventes</p>
+            <div class="problems-grid-fullwidth">
+                <div class="problem-card-dynamic" data-aos="fade-up" data-aos-delay="100">
+                    <div class="problem-visual">
+                        <div class="problem-icon-animated">❌</div>
+                        <div class="problem-particles"></div>
+                    </div>
+                    <h3 class="problem-title">Influence = Vanity Metrics</h3>
+                    <p class="problem-desc">Vos campagnes génèrent des likes mais pas de ventes</p>
+                    <div class="problem-impact">Impact : -60% ROI</div>
                 </div>
-                <div class="problem-card">
-                    <div class="problem-icon">🎯</div>
-                    <h3>Pas de stratégie globale</h3>
-                    <p>Actions isolées sans cohérence ni optimisation</p>
+                
+                <div class="problem-card-dynamic" data-aos="fade-up" data-aos-delay="200">
+                    <div class="problem-visual">
+                        <div class="problem-icon-animated">🎯</div>
+                        <div class="problem-particles"></div>
+                    </div>
+                    <h3 class="problem-title">Pas de stratégie globale</h3>
+                    <p class="problem-desc">Actions isolées sans cohérence ni optimisation</p>
+                    <div class="problem-impact">Impact : -45% Performance</div>
                 </div>
-                <div class="problem-card">
-                    <div class="problem-icon">📊</div>
-                    <h3>Impossible de mesurer</h3>
-                    <p>Aucun tracking fiable du retour sur investissement</p>
+                
+                <div class="problem-card-dynamic" data-aos="fade-up" data-aos-delay="300">
+                    <div class="problem-visual">
+                        <div class="problem-icon-animated">📊</div>
+                        <div class="problem-particles"></div>
+                    </div>
+                    <h3 class="problem-title">Impossible de mesurer</h3>
+                    <p class="problem-desc">Aucun tracking fiable du retour sur investissement</p>
+                    <div class="problem-impact">Impact : -80% Visibilité</div>
                 </div>
             </div>
             
-            <div class="solution-cta">
-                <h3>Avec Marinette, chaque euro investi génère un retour mesurable</h3>
-                <a href="#methode" class="btn-secondary">Découvrir notre méthode</a>
+            <div class="solution-banner-animated" data-aos="zoom-in" data-aos-delay="400">
+                <div class="solution-content">
+                    <h3 class="solution-title">
+                        Avec <span class="logo-inline">Marinette</span>, chaque euro investi génère un retour mesurable
+                    </h3>
+                    <a href="#methode" class="btn-solution-animated">
+                        <span>Découvrir notre méthode</span>
+                        <div class="btn-shine"></div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section Modernisée -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">Nos services</div>
-                <h2>Une approche complète pour maximiser vos performances</h2>
-                <p>De l'audit à l'optimisation, nous gérons votre influence marketing de A à Z</p>
+    <!-- Services Section Full Width -->
+    <section id="services" class="services-fullwidth">
+        <div class="services-background"></div>
+        <div class="services-content">
+            <div class="section-header-centered" data-aos="fade-up">
+                <div class="section-badge-animated">Nos services</div>
+                <h2 class="section-title-services">
+                    Une approche <span class="highlight-gradient">complète</span> 
+                    pour maximiser vos performances
+                </h2>
+                <p class="section-subtitle-animated">
+                    De l'audit à l'optimisation, nous gérons votre influence marketing de A à Z
+                </p>
             </div>
             
-            <div class="services-modern">
-                <div class="service-large">
-                    <div class="service-content">
-                        <div class="service-number">01</div>
-                        <h3>Influence à la Performance</h3>
-                        <p>Campagnes d'influence ROIste avec tracking des conversions en temps réel. TikTok Shop, Live Shopping, partenariats mesurés.</p>
-                        <ul class="service-benefits">
-                            <li>✓ TikTok Shop & Live Commerce</li>
-                            <li>✓ Micro & Macro influenceurs qualifiés</li>
-                            <li>✓ Tracking conversions en temps réel</li>
-                            <li>✓ ROI garanti sur chaque campagne</li>
+            <div class="services-grid-fullwidth">
+                <!-- Service Principal -->
+                <div class="service-hero" data-aos="fade-right" data-aos-delay="100">
+                    <div class="service-background-gradient"></div>
+                    <div class="service-content-hero">
+                        <div class="service-number-hero">01</div>
+                        <h3 class="service-title-hero">Influence à la Performance</h3>
+                        <p class="service-desc-hero">
+                            Campagnes d'influence ROIste avec tracking des conversions en temps réel. 
+                            TikTok Shop, Live Shopping, partenariats mesurés.
+                        </p>
+                        <ul class="service-benefits-animated">
+                            <li class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>TikTok Shop & Live Commerce</span>
+                            </li>
+                            <li class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Micro & Macro influenceurs qualifiés</span>
+                            </li>
+                            <li class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Tracking conversions temps réel</span>
+                            </li>
+                            <li class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>ROI garanti sur chaque campagne</span>
+                            </li>
                         </ul>
-                        <div class="service-metric">
-                            <span class="metric-number">+285%</span>
-                            <span class="metric-label">ROI moyen</span>
+                        <div class="service-metric-hero">
+                            <div class="metric-number-hero">+285%</div>
+                            <div class="metric-label-hero">ROI moyen</div>
+                            <div class="metric-visualization"></div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="service-compact">
-                    <div class="service-number">02</div>
-                    <h3>Affiliation & Partenariats</h3>
-                    <p>Développement d'un écosystème d'affiliés qualifiés pour une croissance durable et mesurable.</p>
-                    <div class="service-metric-small">
-                        <span>+150% croissance moyenne</span>
+                <!-- Services Compacts -->
+                <div class="services-compact-grid">
+                    <div class="service-compact-dynamic" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-number-compact">02</div>
+                        <div class="service-icon-compact">🤝</div>
+                        <h3 class="service-title-compact">Affiliation & Partenariats</h3>
+                        <p class="service-desc-compact">
+                            Développement d'un écosystème d'affiliés qualifiés pour une croissance durable.
+                        </p>
+                        <div class="service-metric-compact">
+                            <span class="metric-highlight">+150%</span>
+                            <span class="metric-text">croissance moyenne</span>
+                        </div>
+                        <div class="service-hover-effect"></div>
                     </div>
-                </div>
-                
-                <div class="service-compact">
-                    <div class="service-number">03</div>
-                    <h3>Meta Business</h3>
-                    <p>Optimisation complète de vos campagnes Facebook et Instagram avec focus conversion et ROAS.</p>
-                    <div class="service-metric-small">
-                        <span>4.2x ROAS moyen</span>
+                    
+                    <div class="service-compact-dynamic" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-number-compact">03</div>
+                        <div class="service-icon-compact">📱</div>
+                        <h3 class="service-title-compact">Meta Business</h3>
+                        <p class="service-desc-compact">
+                            Optimisation Facebook et Instagram Ads avec focus conversion et ROAS.
+                        </p>
+                        <div class="service-metric-compact">
+                            <span class="metric-highlight">4.2x</span>
+                            <span class="metric-text">ROAS moyen</span>
+                        </div>
+                        <div class="service-hover-effect"></div>
                     </div>
-                </div>
-                
-                <div class="service-compact">
-                    <div class="service-number">04</div>
-                    <h3>Data & Pilotage</h3>
-                    <p>Dashboards temps réel et recommandations data-driven pour optimiser chaque campagne.</p>
-                    <div class="service-metric-small">
-                        <span>100% campagnes trackées</span>
+                    
+                    <div class="service-compact-dynamic" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-number-compact">04</div>
+                        <div class="service-icon-compact">📊</div>
+                        <h3 class="service-title-compact">Data & Pilotage</h3>
+                        <p class="service-desc-compact">
+                            Dashboards temps réel et recommandations data-driven pour optimiser.
+                        </p>
+                        <div class="service-metric-compact">
+                            <span class="metric-highlight">100%</span>
+                            <span class="metric-text">campagnes trackées</span>
+                        </div>
+                        <div class="service-hover-effect"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Methodology Section Style Phamily -->
-    <section id="methode" class="methodology">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">Notre méthode</div>
-                <h2>Comment nous transformons vos budgets en performance</h2>
-                <p>Un processus éprouvé en 5 étapes pour des résultats garantis</p>
+    <!-- Methodology Section Full Width -->
+    <section id="methode" class="methodology-fullwidth">
+        <div class="methodology-background"></div>
+        <div class="methodology-content">
+            <div class="section-header-methodology" data-aos="fade-up">
+                <div class="section-badge-animated">Notre méthode</div>
+                <h2 class="section-title-methodology">
+                    Comment nous <span class="highlight-transform">transformons</span> 
+                    vos budgets en performance
+                </h2>
+                <p class="section-subtitle-methodology">
+                    Un processus éprouvé en 5 étapes pour des résultats garantis
+                </p>
             </div>
             
-            <div class="method-steps">
-                <div class="step-modern">
-                    <div class="step-number">— 01</div>
-                    <div class="step-content">
-                        <h3>Audit Performance</h3>
-                        <p>Analyse complète de vos performances actuelles, identification des leviers d'optimisation et définition des objectifs ROI.</p>
-                        <div class="step-detail">
-                            <strong>Livrables :</strong> Audit complet, recommandations prioritaires, forecast ROI
+            <div class="methodology-timeline">
+                <div class="timeline-line"></div>
+                
+                <div class="method-step-fullwidth" data-aos="fade-right" data-aos-delay="100">
+                    <div class="step-visual">
+                        <div class="step-number-animated">01</div>
+                        <div class="step-connector"></div>
+                    </div>
+                    <div class="step-content-animated">
+                        <h3 class="step-title">Audit Performance</h3>
+                        <p class="step-description">
+                            Analyse complète de vos performances actuelles, identification des leviers 
+                            d'optimisation et définition des objectifs ROI.
+                        </p>
+                        <div class="step-deliverables">
+                            <strong class="deliverables-title">Livrables :</strong>
+                            <div class="deliverables-list">
+                                <span class="deliverable-item">Audit complet</span>
+                                <span class="deliverable-item">Recommandations prioritaires</span>
+                                <span class="deliverable-item">Forecast ROI</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="step-modern">
-                    <div class="step-number">— 02</div>
-                    <div class="step-content">
-                        <h3>Stratégie Sur-Mesure</h3>
-                        <p>Construction d'une roadmap personnalisée avec planning, budgets alloués et objectifs de performance chiffrés.</p>
-                        <div class="step-detail">
-                            <strong>Livrables :</strong> Stratégie complète, planning détaillé, KPIs définis
+                <div class="method-step-fullwidth" data-aos="fade-left" data-aos-delay="200">
+                    <div class="step-visual">
+                        <div class="step-number-animated">02</div>
+                        <div class="step-connector"></div>
+                    </div>
+                    <div class="step-content-animated">
+                        <h3 class="step-title">Stratégie Sur-Mesure</h3>
+                        <p class="step-description">
+                            Construction d'une roadmap personnalisée avec planning, budgets alloués 
+                            et objectifs de performance chiffrés.
+                        </p>
+                        <div class="step-deliverables">
+                            <strong class="deliverables-title">Livrables :</strong>
+                            <div class="deliverables-list">
+                                <span class="deliverable-item">Stratégie complète</span>
+                                <span class="deliverable-item">Planning détaillé</span>
+                                <span class="deliverable-item">KPIs définis</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="step-modern">
-                    <div class="step-number">— 03</div>
-                    <div class="step-content">
-                        <h3>Déploiement & Activation</h3>
-                        <p>Mise en place des campagnes avec sélection des influenceurs, création du contenu et activation des leviers.</p>
-                        <div class="step-detail">
-                            <strong>Livrables :</strong> Campagnes live, contenus créés, tracking installé
+                <div class="method-step-fullwidth" data-aos="fade-right" data-aos-delay="300">
+                    <div class="step-visual">
+                        <div class="step-number-animated">03</div>
+                        <div class="step-connector"></div>
+                    </div>
+                    <div class="step-content-animated">
+                        <h3 class="step-title">Déploiement & Activation</h3>
+                        <p class="step-description">
+                            Mise en place des campagnes avec sélection des influenceurs, 
+                            création du contenu et activation des leviers.
+                        </p>
+                        <div class="step-deliverables">
+                            <strong class="deliverables-title">Livrables :</strong>
+                            <div class="deliverables-list">
+                                <span class="deliverable-item">Campagnes live</span>
+                                <span class="deliverable-item">Contenus créés</span>
+                                <span class="deliverable-item">Tracking installé</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="step-modern">
-                    <div class="step-number">— 04</div>
-                    <div class="step-content">
-                        <h3>Mesure & Pilotage</h3>
-                        <p>Suivi en temps réel des performances avec dashboards dédiés et alertes automatiques sur les KPIs.</p>
-                        <div class="step-detail">
-                            <strong>Livrables :</strong> Dashboard live, reporting hebdomadaire, alertes
+                <div class="method-step-fullwidth" data-aos="fade-left" data-aos-delay="400">
+                    <div class="step-visual">
+                        <div class="step-number-animated">04</div>
+                        <div class="step-connector"></div>
+                    </div>
+                    <div class="step-content-animated">
+                        <h3 class="step-title">Mesure & Pilotage</h3>
+                        <p class="step-description">
+                            Suivi temps réel des performances avec dashboards dédiés et 
+                            alertes automatiques sur les KPIs.
+                        </p>
+                        <div class="step-deliverables">
+                            <strong class="deliverables-title">Livrables :</strong>
+                            <div class="deliverables-list">
+                                <span class="deliverable-item">Dashboard live</span>
+                                <span class="deliverable-item">Reporting hebdomadaire</span>
+                                <span class="deliverable-item">Alertes</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="step-modern">
-                    <div class="step-number">— 05</div>
-                    <div class="step-content">
-                        <h3>Optimisation Continue</h3>
-                        <p>Ajustements basés sur la data pour maximiser les performances et scaler les campagnes rentables.</p>
-                        <div class="step-detail">
-                            <strong>Livrables :</strong> Optimisations mensuelles, scale des best performers
+                <div class="method-step-fullwidth" data-aos="fade-right" data-aos-delay="500">
+                    <div class="step-visual">
+                        <div class="step-number-animated">05</div>
+                    </div>
+                    <div class="step-content-animated">
+                        <h3 class="step-title">Optimisation Continue</h3>
+                        <p class="step-description">
+                            Ajustements basés sur la data pour maximiser les performances 
+                            et scaler les campagnes rentables.
+                        </p>
+                        <div class="step-deliverables">
+                            <strong class="deliverables-title">Livrables :</strong>
+                            <div class="deliverables-list">
+                                <span class="deliverable-item">Optimisations mensuelles</span>
+                                <span class="deliverable-item">Scale des best performers</span>
+                                <span class="deliverable-item">Growth hacking</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -285,166 +431,223 @@
         </div>
     </section>
 
-    <!-- Results Section -->
-    <section id="resultats" class="results">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-badge">Résultats prouvés</div>
-                <h2>Nos clients génèrent en moyenne +285% de ROI</h2>
+    <!-- Results Section Full Width -->
+    <section id="resultats" class="results-fullwidth">
+        <div class="results-background"></div>
+        <div class="results-content">
+            <div class="section-header-results" data-aos="fade-up">
+                <div class="section-badge-animated">Résultats prouvés</div>
+                <h2 class="section-title-results">
+                    Nos clients génèrent en moyenne 
+                    <span class="highlight-roi">+285% de ROI</span>
+                </h2>
             </div>
             
-            <div class="results-showcase">
-                <div class="result-card highlight">
-                    <div class="result-client">
-                        <div class="client-logo">T</div>
-                        <div class="client-info">
-                            <strong>TENEX</strong>
-                            <span>SaaS RH</span>
+            <div class="results-showcase-fullwidth">
+                <div class="result-hero-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="result-background-glow"></div>
+                    <div class="result-client-info">
+                        <div class="client-logo-dynamic">T</div>
+                        <div class="client-details">
+                            <strong class="client-name">TENEX</strong>
+                            <span class="client-sector">SaaS RH</span>
                         </div>
                     </div>
-                    <div class="result-metrics">
-                        <div class="result-metric">
-                            <span class="number">+400%</span>
-                            <span class="label">ROI généré</span>
+                    <div class="result-metrics-grid">
+                        <div class="result-metric-item">
+                            <div class="metric-number-result">+400%</div>
+                            <div class="metric-label-result">ROI généré</div>
+                            <div class="metric-progress-bar">
+                                <div class="progress-fill" data-width="90"></div>
+                            </div>
                         </div>
-                        <div class="result-metric">
-                            <span class="number">€180K</span>
-                            <span class="label">CA attribuable</span>
+                        <div class="result-metric-item">
+                            <div class="metric-number-result">€180K</div>
+                            <div class="metric-label-result">CA attribuable</div>
+                            <div class="metric-progress-bar">
+                                <div class="progress-fill" data-width="85"></div>
+                            </div>
                         </div>
                     </div>
-                    <blockquote>
-                        "Jessica a été bien plus qu'une consultante : un véritable co-pilote stratégique qui nous a aidés à transformer notre concept en projet structuré."
+                    <blockquote class="result-testimonial">
+                        "Jessica a été bien plus qu'une consultante : un véritable co-pilote stratégique 
+                        qui nous a aidés à transformer notre concept en projet structuré."
                     </blockquote>
                     <div class="result-author">
                         <strong>Baptiste</strong> · Fondateur
                     </div>
                 </div>
                 
-                <div class="results-grid">
-                    <div class="result-stat">
-                        <div class="stat-number">+285%</div>
-                        <div class="stat-label">ROI moyen</div>
+                <div class="results-stats-grid" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-card-result">
+                        <div class="stat-icon-result">📈</div>
+                        <div class="stat-number-result">+285%</div>
+                        <div class="stat-label-result">ROI moyen</div>
+                        <div class="stat-animation-line"></div>
                     </div>
-                    <div class="result-stat">
-                        <div class="stat-number">€2.8M</div>
-                        <div class="stat-label">CA total généré</div>
+                    <div class="stat-card-result">
+                        <div class="stat-icon-result">💰</div>
+                        <div class="stat-number-result">€2.8M</div>
+                        <div class="stat-label-result">CA total généré</div>
+                        <div class="stat-animation-line"></div>
                     </div>
-                    <div class="result-stat">
-                        <div class="stat-number">15+</div>
-                        <div class="stat-label">Clients accompagnés</div>
+                    <div class="stat-card-result">
+                        <div class="stat-icon-result">🎯</div>
+                        <div class="stat-number-result">15+</div>
+                        <div class="stat-label-result">Clients accompagnés</div>
+                        <div class="stat-animation-line"></div>
                     </div>
-                    <div class="result-stat">
-                        <div class="stat-number">4.2x</div>
-                        <div class="stat-label">ROAS moyen</div>
+                    <div class="stat-card-result">
+                        <div class="stat-icon-result">🚀</div>
+                        <div class="stat-number-result">4.2x</div>
+                        <div class="stat-label-result">ROAS moyen</div>
+                        <div class="stat-animation-line"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section Modernisée -->
-    <section id="contact" class="cta-modern">
-        <div class="container">
-            <div class="cta-content-modern">
-                <div class="cta-text">
-                    <h2>Prêt à transformer vos budgets en performance ?</h2>
-                    <p>Obtenez un audit gratuit de vos performances actuelles et découvrez votre potentiel de croissance.</p>
-                </div>
-                
-                <div class="cta-options">
-                    <div class="cta-primary-option">
-                        <h3>🎯 Audit Gratuit</h3>
-                        <p>Analyse complète de vos performances + recommandations personnalisées</p>
-                        <div class="cta-benefits">
-                            <span>✓ Audit performance gratuit</span>
-                            <span>✓ Recommandations prioritaires</span>
-                            <span>✓ Estimation ROI potentiel</span>
+    <!-- CTA Section Full Width -->
+    <section id="contact" class="cta-fullwidth">
+        <div class="cta-background-animated"></div>
+        <div class="cta-content-fullwidth">
+            <div class="cta-header-animated" data-aos="fade-up">
+                <h2 class="cta-title-dynamic">
+                    Prêt à <span class="highlight-transform">transformer</span> 
+                    vos budgets en performance ?
+                </h2>
+                <p class="cta-subtitle-dynamic">
+                    Obtenez un audit gratuit de vos performances actuelles et découvrez votre potentiel de croissance.
+                </p>
+            </div>
+            
+            <div class="cta-options-fullwidth">
+                <div class="cta-card-primary" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="cta-card-glow"></div>
+                    <div class="cta-icon-primary">🎯</div>
+                    <h3 class="cta-card-title">Audit Gratuit</h3>
+                    <p class="cta-card-desc">
+                        Analyse complète de vos performances + recommandations personnalisées
+                    </p>
+                    <div class="cta-benefits-animated">
+                        <div class="benefit-check">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Audit performance gratuit</span>
                         </div>
-                        <a href="#" class="btn-primary-large">Démarrer l'audit gratuit</a>
+                        <div class="benefit-check">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Recommandations prioritaires</span>
+                        </div>
+                        <div class="benefit-check">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Estimation ROI potentiel</span>
+                        </div>
                     </div>
-                    
-                    <div class="cta-secondary-option">
-                        <h3>💬 Échange Stratégique</h3>
-                        <p>Discussion approfondie sur vos objectifs et notre approche</p>
-                        <a href="#" class="btn-secondary-outline">Planifier un appel</a>
-                    </div>
+                    <a href="#" class="btn-cta-primary">
+                        <span>Démarrer l'audit gratuit</span>
+                        <i class="fas fa-rocket"></i>
+                    </a>
                 </div>
                 
-                <div class="contact-info-modern">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>hello@marinette-agency.com</span>
-                    </div>
-                    <div class="contact-item">
+                <div class="cta-card-secondary" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="cta-icon-secondary">💬</div>
+                    <h3 class="cta-card-title">Échange Stratégique</h3>
+                    <p class="cta-card-desc">
+                        Discussion approfondie sur vos objectifs et notre approche
+                    </p>
+                    <a href="#" class="btn-cta-secondary">
+                        <span>Planifier un appel</span>
                         <i class="fas fa-phone"></i>
-                        <span>+33 1 23 45 67 89</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Paris, France</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer Modernisé -->
-    <footer class="footer-modern">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <svg class="marinette-logo-footer" viewBox="0 0 180 45" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <style>
-                                .logo-text-footer { fill: #3385FF; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 16px; }
-                                .logo-tagline-footer { fill: #ccc; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 7px; text-transform: uppercase; letter-spacing: 0.1em; }
-                            </style>
-                        </defs>
-                        
-                        <!-- Marinette Text -->
-                        <text x="0" y="20" class="logo-text-footer">Marinette</text>
-                        
-                        <!-- Performance Agency -->
-                        <text x="0" y="32" class="logo-tagline-footer">PERFORMANCE AGENCY</text>
-                    </svg>
-                    <p>L'influence marketing sans les maux de tête</p>
-                </div>
-                
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Services</h4>
-                        <a href="#">Influence Performance</a>
-                        <a href="#">Affiliation</a>
-                        <a href="#">Meta Business</a>
-                        <a href="#">Data & Pilotage</a>
-                    </div>
-                    
-                    <div class="footer-column">
-                        <h4>Ressources</h4>
-                        <a href="#">Cas d'études</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Guide ROI</a>
-                    </div>
-                    
-                    <div class="footer-column">
-                        <h4>Contact</h4>
-                        <a href="mailto:hello@marinette-agency.com">hello@marinette-agency.com</a>
-                        <a href="tel:+33123456789">+33 1 23 45 67 89</a>
-                    </div>
+                    </a>
                 </div>
             </div>
             
-            <div class="footer-bottom">
-                <p>&copy; 2025 Marinette. Tous droits réservés.</p>
-                <div class="footer-social">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+            <div class="contact-info-fullwidth" data-aos="fade-up" data-aos-delay="300">
+                <div class="contact-item-animated">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <span>hello@marinette-agency.com</span>
+                </div>
+                <div class="contact-item-animated">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <span>+33 1 23 45 67 89</span>
+                </div>
+                <div class="contact-item-animated">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <span>Paris, France</span>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- Footer Full Width -->
+    <footer class="footer-fullwidth">
+        <div class="footer-content-fullwidth">
+            <div class="footer-brand-section">
+                <svg class="marinette-logo-footer-dynamic" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <style>
+                            .logo-text-footer-dynamic { fill: #3385FF; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 18px; }
+                            .logo-tagline-footer-dynamic { fill: #ccc; font-family: 'Inter', sans-serif; font-weight: 500; font-size: 7px; text-transform: uppercase; letter-spacing: 0.15em; }
+                        </style>
+                    </defs>
+                    <text x="0" y="22" class="logo-text-footer-dynamic">Marinette</text>
+                    <text x="0" y="35" class="logo-tagline-footer-dynamic">PERFORMANCE AGENCY</text>
+                </svg>
+                <p class="footer-tagline">L'influence marketing sans les maux de tête</p>
+                <div class="social-links-animated">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-links-grid">
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Services</h4>
+                    <a href="#" class="footer-link">Influence Performance</a>
+                    <a href="#" class="footer-link">Affiliation & Partenariats</a>
+                    <a href="#" class="footer-link">Meta Business</a>
+                    <a href="#" class="footer-link">Data & Pilotage</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Ressources</h4>
+                    <a href="#" class="footer-link">Cas d'études</a>
+                    <a href="#" class="footer-link">Blog Performance</a>
+                    <a href="#" class="footer-link">Guide ROI</a>
+                    <a href="#" class="footer-link">Outils gratuits</a>
+                </div>
+                
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Contact</h4>
+                    <a href="mailto:hello@marinette-agency.com" class="footer-link">hello@marinette-agency.com</a>
+                    <a href="tel:+33123456789" class="footer-link">+33 1 23 45 67 89</a>
+                    <span class="footer-link">Paris, France</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom-animated">
+            <p class="footer-copyright">&copy; 2025 Marinette. Tous droits réservés.</p>
+            <p class="footer-made-with">Fait avec ❤️ pour transformer le marketing d'influence</p>
+        </div>
     </footer>
 
+    <!-- AOS Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
