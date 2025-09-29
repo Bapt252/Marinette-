@@ -56,20 +56,19 @@ body {
     align-items: center;
 }
 
-.nav-logo h2 {
-    color: var(--electric-blue);
-    font-size: 1.75rem;
-    font-weight: 700;
-    margin-bottom: -4px;
-    letter-spacing: -0.02em;
+.nav-logo {
+    display: flex;
+    align-items: center;
 }
 
-.nav-logo .tagline {
-    font-size: 0.75rem;
-    color: var(--text-muted);
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+.marinette-logo {
+    height: 40px;
+    width: auto;
+    transition: all 0.2s ease;
+}
+
+.marinette-logo:hover {
+    transform: scale(1.05);
 }
 
 .nav-menu {
@@ -103,6 +102,20 @@ body {
 .cta-nav:hover {
     background: var(--electric-blue-dark) !important;
     transform: translateY(-1px);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: var(--electric-blue);
+    margin: 3px 0;
+    transition: 0.3s;
 }
 
 /* Hero Section Modernisé */
@@ -868,11 +881,15 @@ body {
     margin-bottom: 3rem;
 }
 
-.footer-brand h3 {
-    color: var(--electric-blue);
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.marinette-logo-footer {
+    height: 35px;
+    width: auto;
 }
 
 .footer-brand p {
@@ -932,6 +949,18 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    
+    .nav-menu {
+        display: none;
+    }
+    
+    .marinette-logo {
+        height: 35px;
+    }
+    
     .hero-container,
     .services-modern,
     .results-showcase,
@@ -997,5 +1026,13 @@ body {
     
     .services, .methodology, .results, .value-prop {
         padding: 60px 0;
+    }
+    
+    .marinette-logo {
+        height: 30px;
+    }
+    
+    .marinette-logo-footer {
+        height: 30px;
     }
 }
